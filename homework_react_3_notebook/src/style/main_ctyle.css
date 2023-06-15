@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+/* Змінні */
+:root{
+    --font-roboto: 'Roboto', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+
+    --font-comfortaa: 'Comfortaa', cursive;
+    --font-style-normal: normal;
+    --font-style-Italic:  Italic;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    font-size: 10px;
+    --color-white:#ffffff;
+    --color-F5F5F5:#F5F5F5;
+    --color-FFBB00: #FFBB00;
+    --color-F6AD09-btn: #F6AD09;
+    --color-9C9C9C: #9C9C9C;
+    --color-CCCCCC: #CCCCCC;
+    --color-B2B2B2: #B2B2B2;
+    --color-9b9595: #9b9595;
+    --color-595959: #595959;
+    --color-664400: #664400;
+    --color-2E2E2E: #2E2E2E;
+    --color-0f1c94: #0f1c94;
+    --color-077ddd: #1525bb;
+    --color-0be039: #0be039;
+    --color-332200: #332200;
+    --color-111111: #111111;
+    --color-161616: #161616;
+    --color-black:#000000;
+
+    --background-header-footer: #1b1b1b83;
+
+
+}
+
+
+/* Скидання дефолтних налаштуваннь. */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 скидання ролей дисплея для старих браузерів */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+/* Загальні стилі */
+a{
+    text-decoration: none;
+    font-style: normal;
+}
+body{
+    font-family: var(--font-roboto);
+    width: 100%;
+    font-size: 3rem;
+}
+.main-page{
+    max-width: 140rem;
+    min-height: 70rem ;
+    margin: 0 auto;
+    color: var(--color-white);
+    background: url('../image/img-background/background-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.header{
+    background: var(--background-header-footer);
+}
+.header-nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.header-logo{
+    width: 8rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.header-logo >img{
+    display: block;
+    width: 100%;
+}
+/* Секція домашня робота. */
+.section{
+    width: 95%;
+    font-size: 2.3rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+   
+}
+.section>p{
+    margin-bottom: 5rem;
+    text-align: start;
+    padding: 5rem;
+    line-height: 1.5;
+}
+
+.home-work-box h2{
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: var(--color-0f1c94);
+    font-weight: var(--font-weight-600);
+}
+.home-work-btns{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    margin: 0 auto;
+}
+.show-input{
+    position:fixed;
+    /* width: 80%; */
+    top: 50%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 70%;
+    border-radius: 1rem;
+    border: 1px solid var(--color-black);
+    padding: 2rem 2rem 2rem 10rem;
+    background: url('../image/img-background/background-product.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 2;
+}
+
+.show-input input{
+    font-family: var(--font-comfortaa);
+    font-weight: var(--font-weight-500);
+    font-style: italic;
+    color: var(--color-077ddd);
+    font-size: 2rem;
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--color-077ddd);
+    outline: 1px solid rgba(0, 0, 0, 0);
+    padding: 1rem;
+    margin: 1rem;
+    margin-left: 5rem;
+}
+
+
+.home-work-btns span{
+    font-size: 2.3rem;
+}
+
+.list-product{
+    font-family: var(--font-comfortaa);
+    font-style: italic;
+    color: var(--color-077ddd);
+    width: 60%;
+    min-height: 60rem;
+    font-size: 2.3rem;
+    color: var(--color-black);
+    margin: 2rem auto;
+    padding: 2rem 2rem 2rem 10rem;
+    border-radius: 1rem;
+    background: url('../image/img-background/background-product.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-add{
+    cursor: pointer;
+    font-family: var(--font-comfortaa);
+    font-weight: var(--font-weight-500);
+    font-size: 2rem;
+    border-radius: .6rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #bdb6b6;
+    transition: all .3s;
+}
+.btn-add:hover{
+    background-color: #0be039;
+    color: white;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6rem ;
+    margin: 1rem;
+    margin-left: 7rem;
+    color: var(--color-077ddd);
+    text-transform: capitalize;
+    font-weight: var(--font-weight-500);
+    border-bottom: 1px solid var(--color-077ddd);
+    transition: all .3s;
+}
+.edit{
+    border-radius: 1rem;
+    border: 1px solid rgb(5, 116, 10);
+}
+
+.btn{
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-600);
+    font-size: 2rem;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    transition: all .3s;
+    margin-left: 1rem;
+    border: 1px solid var(--color-black);
+
+}
+.red{
+    color: red;  
+}
+.ellow{
+    color:var(--color-black);
+}
+
+.crossed{
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+.hide{
+    width: 0; 
+    padding: 0;
+    border: none;
+}
+
+
+.btn:hover{
+    background-color: #0be039;
+}
+
+
+
+
+.footer{
+    font-size: 2rem;
+    background-color: var(--background-header-footer);
+    padding: 2rem;
+}
+.footer-box{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.footer-box>a{
+    color: var(--color-white);
+    transition: all .3s;
+}
+.footer-box>a:hover{
+    color: rgb(212, 193, 193);
+}

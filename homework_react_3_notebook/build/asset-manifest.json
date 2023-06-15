@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f5d5855.css",
+    "main.js": "/static/js/main.ef9a74ba.js",
+    "static/media/logo.jpg": "/static/media/logo.7b3349202bc0cd03c9d1.jpg",
+    "static/media/background-dark.jpg": "/static/media/background-dark.8c69258a9dc44c689f28.jpg",
+    "static/media/background-product.jpg": "/static/media/background-product.f4ef997b9618a1894396.jpg",
+    "index.html": "/index.html",
+    "main.5f5d5855.css.map": "/static/css/main.5f5d5855.css.map",
+    "main.ef9a74ba.js.map": "/static/js/main.ef9a74ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f5d5855.css",
+    "static/js/main.ef9a74ba.js"
+  ]
+}
